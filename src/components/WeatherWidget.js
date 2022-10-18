@@ -70,7 +70,11 @@ export default function SearchWeather() {
   return (
     <div>
       <div className="container">
-        <input type="search" onKeyUp={searchWeather} placeholder="Kerko..." />
+        <input
+          type="search"
+          onKeyUp={searchWeather}
+          placeholder="Search Locations"
+        />
         {message && <p>{message}</p>}
         {error && <p>Something went wrong!!!</p>}
         {icon && name && temp && (
