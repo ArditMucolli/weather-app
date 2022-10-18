@@ -72,7 +72,7 @@ export default function SearchWeather() {
       <div className="container">
         <input type="search" onKeyUp={searchWeather} placeholder="Kerko..." />
         {message && <p>{message}</p>}
-        {error && <p>Diqka shkoj keq pergjat kerkimit!</p>}
+        {error && <p>Something went wrong!!!</p>}
         {icon && name && temp && (
           <div className="widget">
             <h2>{name}</h2>
