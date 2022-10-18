@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import WeatherWidget from "./components/WeatherWidget";
 
 function App() {
-  return <div></div>;
+  return <WeatherWidget />;
 }
 
 export default App;
