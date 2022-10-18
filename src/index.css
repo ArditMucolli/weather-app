@@ -6,10 +6,12 @@
 
 body {
   height: 100vh;
-  background-color: aliceblue;
+  background-color: rgb(47, 48, 49);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -26,4 +28,23 @@ input[type="search"] {
   text-align: center;
   columns: #333;
   font-size: 22px;
+}
+
+p {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.widget {
+  height: 150px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.widget img {
+  width: 90px;
 }
