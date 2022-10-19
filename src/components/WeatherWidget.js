@@ -2,22 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./WeatherWidget.css";
-
-import cold from "../assets/images/cold.jpg";
-import normal from "../assets/images/normal.jpg";
-import sunny from "../assets/images/sunny.jpg";
+import loadBackgroundImage from "./Background";
 
 const api_key = `db5c20b47f469fd9a75ed4c4ed3642d6`;
-
-function loadBackgroundImage(temp) {
-  if (temp < 10) {
-    return cold;
-  } else if (temp > 10 && temp < 25) {
-    return normal;
-  } else if (temp > 25) {
-    return sunny;
-  }
-}
 
 export default function SearchWeather() {
   const [search, setSearch] = useState("");
