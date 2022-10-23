@@ -12,12 +12,12 @@ export default function SearchWeather() {
   const [message, setMessage] = useState();
   const [error, setError] = useState(false);
 
-  const [temp, setTemp] = useState();
-  const [icon, setIcon] = useState();
-  const [name, setName] = useState();
+  const [temp, setTemp] = useState("");
+  const [icon, setIcon] = useState("");
+  const [name, setName] = useState("");
 
   useEffect(() => {
-    document.body.style.backgroundImage = `url(${background})`;
+    document.body.style.backgroundImage = `url(${background})`; //1
   }, [background]);
 
   const searchWeather = e => {
