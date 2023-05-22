@@ -25,7 +25,7 @@ export default function SearchWeather() {
 
     switch (e.keyCode) {
       case 13:
-        if (search.length > 3) {
+        if (search.length >= 3) {
           const api_url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${api_key}&lang=al`;
           axios
             .get(api_url)
@@ -51,6 +51,7 @@ export default function SearchWeather() {
           setMessage("Name is to short");
         }
         break;
+      default:
     }
   };
 
@@ -67,7 +68,7 @@ export default function SearchWeather() {
         {icon && name && temp && (
           <div className="widget">
             <h2>{name}</h2>
-            <img src={icon} />
+            <img src={icon} alt="icon" />
             <h3>
               {temp} <sup>0</sup>C
             </h3>
